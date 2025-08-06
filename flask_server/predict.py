@@ -3,7 +3,7 @@ from ultralytics import YOLO
 def run():
     model = YOLO('best.pt')
 
-    file_name = 'test250805.jpg'
+    file_name = 'test250805.jpg' # file_name = "https://imgbb.com/???"
     result = model(file_name)
 
     result_name = f'detection/result_{file_name}'
